@@ -1,0 +1,9 @@
+<div ng-controller="ctl">
+		<input type="text" ng-model="cliente.nombre">
+		{{ cliente.nombre }}
+
+	<ul ng-repeat ="d in clientes | filter:cliente.nombre ">
+		<li> {{d.nombre}} {{d.direccion}}</li>
+	</ul>
+
+ 	</div>
